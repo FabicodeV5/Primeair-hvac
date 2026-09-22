@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrimeAir HVAC — Miami Heating &amp; Cooling (Demo)</title>
+  <meta name="description" content="Demo landing page for PrimeAir HVAC, a fictional Miami HVAC company. Built as a sales sample by a web agency.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <p class="demo-banner">
+    Demo website for agency purposes. Company name, phone number, service areas, and reviews shown here are placeholder content, not a real business.
+  </p>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        PrimeAir<span class="logo-accent">HVAC</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why us</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#areas">Service areas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="call-link" href="tel:+13055550142">
+          <span class="call-label">Call now</span>
+          <span class="call-number">(305) 555-0142</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false">
+          <span class="menu-toggle-bar"></span>
+          <span class="visually-hidden">Open menu</span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why us</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#areas">Service areas</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="mobile-call" href="tel:+13055550142">Call (305) 555-0142</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 320 320" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+          <circle cx="160" cy="160" r="118" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+          <circle cx="160" cy="160" r="80" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          <line x1="160" y1="20" x2="160" y2="300" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+          <line x1="20" y1="160" x2="300" y2="160" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+          <rect x="120" y="120" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="120" y1="150" x2="200" y2="150" stroke="currentColor" stroke-width="2"/>
+          <line x1="120" y1="170" x2="200" y2="170" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="hero-inner">
+        <p class="hero-kicker">Miami &amp; surrounding area</p>
+        <h1 class="hero-title">
+          When your AC fails,<br>
+          you need someone there<br>
+          <span class="hero-title-accent">today, not next week.</span>
+        </h1>
+        <p class="hero-copy">
+          PrimeAir HVAC handles repairs, installs, and emergency calls for homes and businesses
+          across the Miami area. One call gets you a technician on the way, not a voicemail.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+13055550142">Call (305) 555-0142</a>
+          <a class="btn btn-secondary" href="#contact">Request a quote</a>
+        </div>
+        <p class="hero-note">Call now — we'll get a technician scheduled while you're still on the phone.</p>
+      </div>
+    </section>
+
+    <!-- VALUE SIGNALS -->
+    <section class="value-signals" aria-label="Why call PrimeAir HVAC">
+      <ul>
+        <li>
+          <span class="value-figure">24/7</span>
+          <span class="value-label">Emergency service</span>
+        </li>
+        <li>
+          <span class="value-figure">Fast</span>
+          <span class="value-label">Response times</span>
+        </li>
+        <li>
+          <span class="value-figure">Res. + Com.</span>
+          <span class="value-label">Homes &amp; businesses</span>
+        </li>
+        <li>
+          <span class="value-figure">Free</span>
+          <span class="value-label">Request a quote</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="section-head">
+        <h2>Services built around one goal: getting your air working again</h2>
+        <p>Tell us what's happening and we'll match you with the right fix — no guessing over the phone.</p>
+      </div>
+
+      <ul class="service-list">
+        <li class="service-row">
+          <h3>AC repair</h3>
+          <p>Warm rooms, strange noises, or a system that won't turn on. We diagnose it on site and explain the fix before we start.</p>
+          <a class="service-link" href="#contact">Request a quote</a>
+        </li>
+
+        <li class="service-row">
+          <h3>Emergency service</h3>
+          <p>Cooling failures don't wait for business hours. Call anytime and we'll walk you through next steps immediately.</p>
+          <a class="service-link" href="tel:+13055550142">Call now</a>
+        </li>
+
+        <li class="service-row">
+          <h3>New system installation</h3>
+          <p>Replacing an aging unit or fitting a new build. We size the system to your space instead of upselling the biggest model.</p>
+          <a class="service-link" href="#contact">Request a quote</a>
+        </li>
+
+        <li class="service-row">
+          <h3>Maintenance plans</h3>
+          <p>Seasonal check-ups that catch small issues before they become a Saturday-night emergency.</p>
+          <a class="service-link" href="#contact">Request a quote</a>
+        </li>
+
+        <li class="service-row">
+          <h3>Commercial HVAC</h3>
+          <p>Offices, restaurants, and retail spaces where downtime costs you customers. We prioritize business calls accordingly.</p>
+          <a class="service-link" href="#contact">Request a quote</a>
+        </li>
+
+        <li class="service-row">
+          <h3>Indoor air quality</h3>
+          <p>Humidity, filtration, and airflow fixes for homes where the air always feels heavy.</p>
+          <a class="service-link" href="#contact">Request a quote</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why-us" class="why-us">
+      <div class="why-us-inner">
+        <h2>What working with us actually looks like</h2>
+        <ul class="why-list">
+          <li>
+            <h3>We answer the phone</h3>
+            <p>A real person picks up and gets a technician moving — not a call center reading from a script.</p>
+          </li>
+          <li>
+            <h3>We quote before we start</h3>
+            <p>You know the plan and the cost before any work begins. No surprises on the invoice.</p>
+          </li>
+          <li>
+            <h3>We show up in the window we give you</h3>
+            <p>If timing changes, you hear about it from us, not by waiting and wondering.</p>
+          </li>
+          <li>
+            <h3>We explain the fix</h3>
+            <p>You'll know what was wrong and what we did about it, in plain language.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="process">
+      <div class="section-head">
+        <h2>From first call to cool air, in four steps</h2>
+      </div>
+
+      <ol class="process-steps">
+        <li>
+          <span class="step-number">1</span>
+          <h3>Call or request a quote</h3>
+          <p>Tell us what's going on. We'll ask a few quick questions to understand the issue.</p>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <h3>We schedule a visit</h3>
+          <p>You get a clear time window, prioritized by urgency for emergencies.</p>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <h3>Diagnosis &amp; quote on site</h3>
+          <p>A technician inspects the system and quotes the work before touching anything.</p>
+        </li>
+        <li>
+          <span class="step-number">4</span>
+          <h3>Repair or install</h3>
+          <p>We complete the work and walk you through what changed.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SERVICE AREAS -->
+    <section id="areas" class="service-areas">
+      <div class="section-head">
+        <h2>Where we work</h2>
+        <p>
+          Serving Miami and nearby areas.
+          <span class="demo-tag">Demo content — illustrative zones, not a live coverage map</span>
+        </p>
+      </div>
+
+      <ul class="areas-grid">
+        <li>Downtown Miami</li>
+        <li>Brickell</li>
+        <li>Coral Gables</li>
+        <li>Coconut Grove</li>
+        <li>Little Havana</li>
+        <li>Miami Beach</li>
+        <li>Doral</li>
+        <li>Kendall</li>
+        <li>Hialeah</li>
+        <li>Aventura</li>
+        <li>Homestead</li>
+        <li>Pinecrest</li>
+      </ul>
+      <p class="areas-note">Don't see your area? Call and ask — we cover more ground than this list shows.</p>
+    </section>
+
+    <!-- TESTIMONIAL (DEMO) -->
+    <section class="testimonial">
+      <div class="testimonial-inner">
+        <span class="demo-tag demo-tag-light">Demo content — sample review for layout purposes only</span>
+        <blockquote>
+          <p>"Our AC went out on a Sunday and someone was already on the way within the hour. That kind of response is what we'd want to offer our own customers."</p>
+          <footer>— Placeholder customer, Miami (fictional, for demo layout)</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <h2>Request a quote</h2>
+          <p>Send us a few details and we'll follow up to schedule a visit. Prefer to talk now?</p>
+          <a class="btn btn-primary" href="tel:+13055550142">Call (305) 555-0142</a>
+          <dl class="contact-facts">
+            <div>
+              <dt>Hours</dt>
+              <dd>24/7 emergency line · Standard hours 7am–7pm (demo schedule)</dd>
+            </div>
+            <div>
+              <dt>Coverage</dt>
+              <dd>Miami and nearby areas (demo content)</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="quote-form" id="quote-form" novalidate>
+          <p class="form-demo-note">Demo form — no data is sent or stored. This is for layout and UX demonstration only.</p>
+
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="service">What do you need?</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="repair">AC repair</option>
+              <option value="emergency">Emergency service</option>
+              <option value="install">New installation</option>
+              <option value="maintenance">Maintenance plan</option>
+              <option value="commercial">Commercial HVAC</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Details (optional)</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Request a quote</button>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">PrimeAir<span class="logo-accent">HVAC</span></p>
+        <p>Demo business built for agency presentation purposes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p><a href="tel:+13055550142">(305) 555-0142</a></p>
+        <p>Miami, FL (demo location)</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Hours</h3>
+        <p>24/7 emergency line</p>
+        <p>Standard hours: 7am–7pm (demo schedule)</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Site</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why us</a></li>
+          <li><a href="#areas">Service areas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      PrimeAir HVAC is a fictional company created solely to demonstrate a landing page design. No goods or services are actually offered. All contact details, reviews, and coverage areas are placeholder content.
+    </p>
+  </footer>
+
+  <div class="sticky-call" role="complementary" aria-label="Quick contact">
+    <a class="sticky-call-btn" href="tel:+13055550142">Call now</a>
+    <a class="sticky-quote-btn" href="#contact">Request a quote</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
