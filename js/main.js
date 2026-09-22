@@ -1,5 +1,5 @@
 /* =========================================================
-   PrimeAir HVAC — Demo landing page (V1.1 refinement)
+   PrimeAir HVAC — Demo landing page (V1.2 — no JS changes needed)
    Vanilla JS. No dependencies, no external requests.
    ========================================================= */
 
@@ -65,4 +65,3 @@
     });
   }
 })();
-                          
