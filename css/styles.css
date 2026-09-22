@@ -1,5 +1,5 @@
 /* =========================================================
-   PrimeAir HVAC — Demo landing page (V1.1 refinement)
+   PrimeAir HVAC — Demo landing page (V1.2 CRO refinement)
    Vanilla CSS, mobile-first, no frameworks, no external assets.
    ========================================================= */
 
@@ -339,11 +339,20 @@ input, select, textarea {
   margin-top: var(--space-3);
   display: flex;
   flex-direction: column;
-  gap: var(--space-1);
+  gap: var(--space-3);
 }
 
+.hero-action { display: flex; flex-direction: column; gap: 0.4em; }
+
+.hero-action-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--steel-light);
+}
+.hero-action-label-urgent { color: var(--amber); }
+
 .hero-note {
-  margin-top: var(--space-2);
+  margin-top: var(--space-3);
   color: var(--steel-light);
   font-size: 0.9rem;
 }
@@ -378,6 +387,40 @@ input, select, textarea {
   font-size: 0.85rem;
   color: var(--ink-soft);
 }
+
+/* ---------- Emergency vs quote decision ---------- */
+.decision {
+  background: var(--paper-raised);
+  border-bottom: 1px solid var(--line);
+}
+.decision-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+.decision-path + .decision-path {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-4);
+}
+.decision-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.6em;
+}
+.decision-emergency .decision-label { color: var(--amber-dark); }
+.decision-quote .decision-label { color: var(--steel); }
+.decision-path h2 {
+  font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+  max-width: 22ch;
+}
+.decision-path p {
+  margin-top: 0.6em;
+  color: var(--ink-soft);
+  max-width: 46ch;
+}
+.decision-path .btn { margin-top: var(--space-3); }
 
 /* ---------- Section shared ---------- */
 section { padding: var(--space-5) var(--space-2); }
@@ -445,6 +488,10 @@ section { padding: var(--space-5) var(--space-2); }
   color: var(--paper-raised);
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   max-width: 22ch;
+  margin-bottom: var(--space-2);
+}
+.why-us-inner > .demo-tag {
+  display: block;
   margin-bottom: var(--space-4);
 }
 .why-list {
@@ -520,28 +567,35 @@ section { padding: var(--space-5) var(--space-2); }
   font-size: 0.95rem;
 }
 
-/* ---------- Testimonial ---------- */
-.testimonial {
+/* ---------- Why reach out (replaces the old testimonial slot) ---------- */
+.reasons {
   background: var(--navy-deep);
   color: var(--paper-raised);
 }
-.testimonial-inner {
-  max-width: 62ch;
+.reasons-inner {
+  max-width: var(--container);
   margin: 0 auto;
 }
-.testimonial blockquote {
-  margin: var(--space-2) 0 0;
-}
-.testimonial blockquote p {
-  font-size: clamp(1.15rem, 4vw, 1.5rem);
-  line-height: 1.4;
+.reasons h2 {
   color: var(--paper-raised);
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  max-width: 22ch;
+  margin-bottom: var(--space-4);
 }
-.testimonial footer {
-  margin-top: var(--space-2);
-  color: var(--steel-light);
-  font-size: 0.9rem;
+.reasons-list {
+  display: grid;
+  gap: var(--space-3);
 }
+.reasons-list li {
+  border-top: 1px solid var(--line-on-dark);
+  padding-top: var(--space-2);
+}
+.reasons-list h3 {
+  color: var(--amber);
+  font-size: 1.05rem;
+  margin-bottom: 0.4em;
+}
+.reasons-list p { color: var(--steel-light); }
 
 /* ---------- Contact ---------- */
 .contact { background: var(--paper); }
@@ -705,6 +759,7 @@ section { padding: var(--space-5) var(--space-2); }
   .value-signals li:nth-child(odd) { border-right: 1px solid var(--line); }
   .value-signals li:nth-child(4n) { border-right: none; }
   .why-list { grid-template-columns: repeat(2, 1fr); }
+  .reasons-list { grid-template-columns: repeat(2, 1fr); }
   .process-steps { grid-template-columns: repeat(2, 1fr); }
   .areas-grid { grid-template-columns: repeat(3, 1fr); }
   .contact-inner { grid-template-columns: 1fr 1fr; align-items: start; }
@@ -733,6 +788,15 @@ section { padding: var(--space-5) var(--space-2); }
 
   .hero-inner { padding: var(--space-6) var(--space-2); }
   .hero-diagram { right: 3%; width: 360px; height: 360px; opacity: 0.45; }
+  .hero-actions { flex-direction: row; gap: var(--space-5); }
+
+  .decision-inner { grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+  .decision-path + .decision-path {
+    border-top: none;
+    border-left: 1px solid var(--line);
+    padding-top: 0;
+    padding-left: var(--space-5);
+  }
 
   .service-row {
     display: grid;
@@ -749,5 +813,4 @@ section { padding: var(--space-5) var(--space-2); }
 
 @media (min-width: 1200px) {
   section { padding-left: 0; padding-right: 0; }
-  }
-             
+}
