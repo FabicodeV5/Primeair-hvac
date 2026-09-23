@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SITEMAP — NOT PRODUCTION READY. TEMPLATE ONLY.
+
+  This project does not yet have a real client domain, so this file
+  intentionally contains no active <urlset> and no live <loc> URL.
+  Inventing one now — including a github.io address — would create a
+  fake URL that could later be crawled or submitted to search engines
+  by mistake.
+
+  This site is currently blocked from indexing on two levels:
+    - robots.txt at the project root: Disallow: /
+    - index.html: <meta name="robots" content="noindex, nofollow">
+
+  BEFORE PRODUCTION, replace this whole file with a real one:
+    1. Confirm the client's real domain (WEBSITE_URL in the
+       BUSINESS CONFIG comment at the top of index.html).
+    2. Replace CLIENT-DOMAIN.com below with that confirmed domain.
+    3. Uncomment the <urlset> block below (remove this comment).
+    4. Remove noindex/nofollow from index.html and Disallow from
+       robots.txt.
+    5. Validate the resulting XML against the sitemap protocol
+       (https://www.sitemaps.org/protocol.html) before submitting it
+       to Search Console.
+
+  Pending production block (kept inside this comment on purpose):
+
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://CLIENT-DOMAIN.com/</loc>
+    </url>
+  </urlset>
+-->
